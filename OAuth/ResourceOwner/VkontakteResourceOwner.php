@@ -41,7 +41,6 @@ class VkontakteResourceOwner extends GenericOAuth2ResourceOwner
     {
         $parameters = array(
             'access_token' => $accessToken['access_token'],
-            'fields'       => $this->options['fields'],
             'name_case'    => $this->options['name_case'],
         );
         $url = $this->normalizeUrl($this->options['infos_url'], $parameters);
